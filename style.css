@@ -21,12 +21,17 @@ h1 {
     color: #f9faf8;
 }
 
+h2 {
+    margin: 24px 0 0 0;
+    font-size: 36px;
+    color: #1f2937;
+}
+
 button {
     color: white;
     background-color: #3882f6;
     border-radius: 8px;
-    padding: 8px 32px;
-    margin-top: 8px;
+    font-size: 18px;
 }
 
 
@@ -43,7 +48,7 @@ button {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
-    padding: 16px 72px;
+    padding: 2% 10%;
 }
 
 .header-top {
@@ -59,18 +64,34 @@ button {
 
 .hero {
     display: flex;
-    margin-top: 72px;
-    margin-bottom: 72px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    gap: 16px;
 }
 
 .hero img {
     width: 200px;
+    max-width: 600px;
     height: auto;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 2%;
 }
 
 .hero-subtext, .header-links a  {
     font-size: 18px;
     color: #e6e7eb;
+}
+
+.hero-left button {
+    align-self: center;
+    margin-top: auto;
+    padding: 4% 16%;
+    border-style: solid;
 }
 
 .hero-left, img {
@@ -79,18 +100,107 @@ button {
 
 /* INFO */
 
-.information {
+.content {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
 }
 
+.info {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.info img {
+    width: 200px;
+    height:200px;
+    max-width: 200px;
+    max-height:200px;
+    border: #3882f6 solid 4px;
+    border-radius: 10%;
+    margin-bottom: 8px;
+}
+
+.info-text {
+    font-size: 18px;
+    color: #1f2937;
+}
+
+.informations {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+
 .quote {
-    flex-grow: 1;
     background-color: #e5e7eb;
+    padding: 5% 10%;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.quote-author {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f2937;
+    text-align: end;
+    margin-top: -8px;
+}
+
+.action {
+    background-color: #3882f6;
+    margin: 0 10% 36px 10%;
+    border-radius: 16px;
+    padding: 5%;
+    display: flex;
+    gap: 8px;
+}
+
+.action-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    gap: 4px;
+    flex: 4;
+}
+
+.action-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.action-subtext {
+    font-size: 16px;
+}
+
+.action button {
+    padding: 2%;
+    border: solid 2px white;
+    flex: 1 0.5 auto;
 }
 
 /* FOOTER */
 
 .footer {
     flex-grow: 1;
+    font-size: 20px;
     background-color: #1F2937;
+    color: #f9faf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
 }
